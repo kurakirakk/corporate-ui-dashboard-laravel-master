@@ -1,3 +1,7 @@
+<?php 
+session_start(); 
+$nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defaultnya "Admin"
+?>
 <x-app-layout>
 
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
@@ -7,8 +11,9 @@
                 <div class="col-md-12">
                     <div class="d-md-flex align-items-center mb-3 mx-2">
                         <div class="mb-md-0 mb-3">
-                            <h3 class="font-weight-bold mb-0">Hello, Noah</h3>
-                            <p class="mb-0">Apps you might like!</p>
+                            {{-- <h3 class="font-weight-bold mb-0">Hello, Admin</h3> --}}
+                            <h3 class="font-weight-bold mb-0">Hello, <?php echo htmlspecialchars($nama_user); ?></h3>
+                            <p class="mb-0">Selamat Datang di Halaman Admin!</p>
                         </div>
                         <button type="button"
                             class="btn btn-sm btn-white btn-icon d-flex align-items-center mb-0 ms-md-auto mb-sm-0 mb-2 me-2">
@@ -33,7 +38,7 @@
                 </div>
             </div>
             <hr class="my-0">
-            <div class="row">
+            {{-- <div class="row">
                 <div class="position-relative overflow-hidden">
                     <div class="swiper mySwiper mt-4 mb-2">
                         <div class="swiper-wrapper">
@@ -123,12 +128,12 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
+                            </div> --}}
+                            {{-- <div class="swiper-slide">
                                 <div
                                     class="card card-background shadow-none border-radius-xl card-background-after-none align-items-start mb-0">
                                     <div class="full-background bg-cover"
-                                        style="background-image: url('../assets/img/img-5.jpg')"></div>
+                                        style="background-image: url('../assets/img/foto2.jpg')"></div>
                                     <div class="card-body text-start px-3 py-0 w-100">
                                         <div class="row mt-12">
                                             <div class="col-sm-3 mt-auto">
@@ -171,7 +176,7 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-            </div>
+            </div> --}}
             <div class="row my-4">
                 <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                     <div class="card shadow-xs border h-100">
