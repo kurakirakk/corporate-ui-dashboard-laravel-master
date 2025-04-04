@@ -35,13 +35,23 @@
                                 <div class="card-body">
                                     <form role="form" class="text-start" method="POST" action="sign-in">
                                         @csrf
-                                        <label>Username</label>
+                                        {{-- <label>Username</label>
                                         <div class="mb-3">
                                             <input type="username" id="username" name="username" class="form-control"
-                                                placeholder="Masukkan Username"
+                                                placeholder="Masukkan Username" --}}
                                                 {{-- value="{{ old('username') ? old('username') : '' }}" --}}
-                                                aria-label="username" aria-describedby="username">
+                                                {{-- aria-label="username" aria-describedby="username">
+                                        </div> --}}
+
+                                        <label>Email Address</label>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control"
+                                                placeholder="Enter your email address" aria-label="Email"
+                                                aria-describedby="email-addon">
                                         </div>
+
+
+
                                         <label>Password</label>
                                         <div class="mb-3">
                                             <input type="password" id="password" name="password"
@@ -59,7 +69,7 @@
                                             </div>
                                             <a href="{{ route('password.request') }}"
                                                 class="text-xs font-weight-bold ms-auto">Forgot
-                                                password</a>
+                                                password?</a>
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Sign in</button>
