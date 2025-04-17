@@ -5,7 +5,7 @@
         <div class="container-fluid py-4 px-5">
             <div class="row">
                 <div class="col-12">
-                    <div class="card card-background card-background-after-none align-items-start mt-4 mb-5">
+                    {{-- <div class="card card-background card-background-after-none align-items-start mt-4 mb-5">
                         <div class="full-background"
                             style="background-image: url('../assets/img/header-blue-purple.jpg')"></div>
                         <div class="card-body text-start p-4 w-100">
@@ -29,19 +29,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="row">
                 <div class="col-12">
                     <div class="card border shadow-xs mb-4">
                         <div class="card-header border-bottom pb-0">
                             <div class="d-sm-flex align-items-center">
                                 <div>
-                                    <h6 class="font-weight-semibold text-lg mb-0">Members list</h6>
-                                    <p class="text-sm">See information about all members</p>
+                                    <h6 class="font-weight-semibold text-lg mb-0">Data Pegawai</h6>
+                                    <p class="text-sm">Daftar PNS Dinas Komunikasi dan Informatika Kabupaten Badung</p>
                                 </div>
                                 <div class="ms-auto d-flex">
                                     <button type="button" class="btn btn-sm btn-white me-2">
-                                        View all
+                                        Lihat Semua
                                     </button>
                                     <button type="button"
                                         class="btn btn-sm btn-dark btn-icon d-flex align-items-center me-2">
@@ -52,7 +52,7 @@
                                                     d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z" />
                                             </svg>
                                         </span>
-                                        <span class="btn-inner--text">Add member</span>
+                                        <span class="btn-inner--text">Tambah Pegawai</span>
                                     </button>
                                 </div>
                             </div>
@@ -86,10 +86,10 @@
                                 <table class="table align-items-center mb-0">
                                     <thead class="bg-gray-100">
                                         <tr>
-                                            <th class="text-secondary text-xs font-weight-semibold opacity-7">Member
+                                            <th class="text-secondary text-xs font-weight-semibold opacity-7">Pegawai
                                             </th>
                                             <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
-                                                Function</th>
+                                                Bidang</th>
                                             <th
                                                 class="text-center text-secondary text-xs font-weight-semibold opacity-7">
                                                 Status</th>
@@ -109,15 +109,15 @@
                                                             alt="user1">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center ms-1">
-                                                        <h6 class="mb-0 text-sm font-weight-semibold">John Michael</h6>
-                                                        <p class="text-sm text-secondary mb-0">john@creative-tim.com
+                                                        <h6 class="mb-0 text-sm font-weight-semibold">Intan Septia</h6>
+                                                        <p class="text-sm text-secondary mb-0">intan123@egov.com
                                                         </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <p class="text-sm text-dark font-weight-semibold mb-0">Manager</p>
-                                                <p class="text-sm text-secondary mb-0">Organization</p>
+                                                <p class="text-sm text-dark font-weight-semibold mb-0">Layanan E-Gov</p>
+                                                <p class="text-sm text-secondary mb-0">Ahli Pranata Muda</p>
                                             </td>
                                             <td class="align-middle text-center text-sm">
                                                 <span
@@ -147,15 +147,15 @@
                                                             alt="user2">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center ms-1">
-                                                        <h6 class="mb-0 text-sm font-weight-semibold">Alexa Liras</h6>
-                                                        <p class="text-sm text-secondary mb-0">alexa@creative-tim.com
+                                                        <h6 class="mb-0 text-sm font-weight-semibold">Kevin</h6>
+                                                        <p class="text-sm text-secondary mb-0">kevin22@egov.com
                                                         </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <p class="text-sm text-dark font-weight-semibold mb-0">Programator</p>
-                                                <p class="text-sm text-secondary mb-0">Developer</p>
+                                                <p class="text-sm text-dark font-weight-semibold mb-0">TIK</p>
+                                                <p class="text-sm text-secondary mb-0">Programmer</p>
                                             </td>
                                             <td class="align-middle text-center text-sm">
                                                 <span
@@ -180,21 +180,21 @@
                                             <td>
                                                 <div class="d-flex px-2 py-1">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="../assets/img/team-1.jpg"
+                                                        <img src="../assets/img/team-5.jpg"
                                                             class="avatar avatar-sm rounded-circle me-2"
                                                             alt="user3">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center ms-1">
-                                                        <h6 class="mb-0 text-sm font-weight-semibold">Laurent Perrier
+                                                        <h6 class="mb-0 text-sm font-weight-semibold">Eka
                                                         </h6>
-                                                        <p class="text-sm text-secondary mb-0">laurent@creative-tim.com
+                                                        <p class="text-sm text-secondary mb-0">eka33@egov.com
                                                         </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                <p class="text-sm text-dark font-weight-semibold mb-0">Executive</p>
-                                                <p class="text-sm text-secondary mb-0">Projects</p>
+                                                <p class="text-sm text-dark font-weight-semibold mb-0">SANTIK</p>
+                                                <p class="text-sm text-secondary mb-0">Kepala Bidang</p>
                                             </td>
                                             <td class="align-middle text-center text-sm">
                                                 <span
