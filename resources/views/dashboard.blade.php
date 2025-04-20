@@ -9,13 +9,24 @@ $nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defa
         <div class="container-fluid py-4 px-5">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="d-md-flex align-items-center mb-3 mx-2">
-                        <div class="mb-md-0 mb-3">
-                            {{-- <h3 class="font-weight-bold mb-0">Hello, Admin</h3> --}}
-                            <h3 class="font-weight-bold mb-0">Hello, <?php echo htmlspecialchars($nama_user); ?></h3>
-                            <p class="mb-0">Selamat Datang di Halaman Admin!</p>
+                    <div class="d-md-flex align-items-center mb-0 mx-2">
+                        <div class="container mt-0">
+                            <div class="card shadow-sm p-4">
+                                <h5 class="mb-0 text-center">Hello,  <?php echo htmlspecialchars($nama_user); ?></h5>
+                                <p class="mb-3 text-center">Selamat Datang di Halaman Admin!</p>
+                                <div class="d-flex justify-content-center">
+                                    <iframe width="100%" height="400" class="rounded"
+                                        src="https://www.youtube.com/embed/-6fIoqG1Xuo?autoplay=1"
+                                        title="YouTube video player" 
+                                        frameborder="0"
+                                        allow="autoplay; encrypted-media" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
                         </div>
-                        <button type="button"
+                        
+                        {{-- <button type="button"
                             class="btn btn-sm btn-white btn-icon d-flex align-items-center mb-0 ms-md-auto mb-sm-0 mb-2 me-2">
                             <span class="btn-inner--icon">
                                 <span class="p-1 bg-success rounded-circle d-flex ms-auto me-2">
@@ -23,8 +34,8 @@ $nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defa
                                 </span>
                             </span>
                             <span class="btn-inner--text">Messages</span>
-                        </button>
-                        <button type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0">
+                        </button> --}}
+                        {{-- <button type="button" class="btn btn-sm btn-dark btn-icon d-flex align-items-center mb-0">
                             <span class="btn-inner--icon">
                                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="none"
                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="d-block me-2">
@@ -33,11 +44,11 @@ $nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defa
                                 </svg>
                             </span>
                             <span class="btn-inner--text">Sync</span>
-                        </button>
+                        </button> --}}
                     </div>
                 </div>
             </div>
-            <hr class="my-0">
+            
             {{-- <div class="row">
                 <div class="position-relative overflow-hidden">
                     <div class="swiper mySwiper mt-4 mb-2">
@@ -177,7 +188,7 @@ $nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defa
                     <div class="swiper-button-next"></div>
                 </div>
             </div> --}}
-            <div class="row my-4">
+            {{-- <div class="row my-4">
                 <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
                     <div class="card shadow-xs border h-100">
                         <div class="card-header pb-0">
@@ -602,17 +613,19 @@ $nama_user = $_SESSION['name'] ?? 'Admin'; // Jika sesi username tidak ada, defa
                                     10.5%
                                 </span>
                             </div>
-                        </div>
-                        <div class="card-body p-3">
+                        </div> --}}
+                        {{-- <div class="card-body p-3">
                             <div class="chart mt-n6">
                                 <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <x-app.footer />
+            </div> --}}
+            
         </div>
-    </main>
+        <x-app.footer />
 
+    </main>
+    
 </x-app-layout>

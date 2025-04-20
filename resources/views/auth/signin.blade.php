@@ -35,19 +35,13 @@
                                 <div class="card-body">
                                     <form role="form" class="text-start" method="POST" action="sign-in">
                                         @csrf
-                                        {{-- <label>Username</label>
-                                        <div class="mb-3">
-                                            <input type="username" id="username" name="username" class="form-control"
-                                                placeholder="Masukkan Username" --}}
-                                                {{-- value="{{ old('username') ? old('username') : '' }}" --}}
-                                                {{-- aria-label="username" aria-describedby="username">
-                                        </div> --}}
+                                      
 
-                                        <label>Email Address</label>
+                                        <label>Username</label>
                                         <div class="mb-3">
-                                            <input type="email" class="form-control"
-                                                placeholder="Enter your email address" aria-label="Email"
-                                                aria-describedby="email-addon">
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your username" aria-label="Username"
+                                                aria-describedby="username-addon">
                                         </div>
 
 
@@ -73,21 +67,12 @@
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Sign in</button>
-                                            {{-- <button type="button" class="btn btn-white btn-icon w-100 mb-3">
-                                                <span class="btn-inner--icon me-1">
-                                                    <img class="w-5" src="../assets/img/logos/google-logo.svg"
-                                                        alt="google-logo" />
-                                                </span>
-                                                <span class="btn-inner--text">Sign in with Google</span>
-                                            </button> --}}
+                                            
                                         </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center pt-0 px-lg-2 px-1">
-                                    {{-- <p class="mb-4 text-xs mx-auto">
-                                        Don't have an account?
-                                        <a href="{{ route('sign-up') }}" class="text-dark font-weight-bold">Sign up</a>
-                                    </p> --}}
+                                    
                                 </div>
                             </div>
                         </div>

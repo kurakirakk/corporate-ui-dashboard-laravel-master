@@ -1,4 +1,4 @@
-<nav class="navbar bg-slate-900 navbar-expand-lg flex-wrap top-0 px-0 py-0">
+{{-- <nav class="navbar bg-slate-900 navbar-expand-lg flex-wrap top-0 px-0 py-0">
     <div class="container py-2">
         <nav aria-label="breadcrumb">
             <div class="d-flex align-items-center">
@@ -181,4 +181,4 @@
             </div>
         </div> --}}
     </div>
-</nav>
+</nav> --}}

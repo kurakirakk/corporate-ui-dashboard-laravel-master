@@ -8,6 +8,8 @@ use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Str;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +30,11 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard')->middleware('auth');
+//Meeting
+Route::get('/meeting', function () {
+    $room = 'room_' . Str::random(8);
+    return redirect('/meeting/' . $room);
+})->name('meeting');
 
 Route::get('/tables', function () {
     return view('tables');
@@ -40,6 +47,10 @@ Route::get('/wallet', function () {
 Route::get('/RTL', function () {
     return view('RTL');
 })->name('RTL')->middleware('auth');
+
+Route::get('/rapat', function () {
+    return view('rapat');
+})->name('rapat')->middleware('auth');
 
 Route::get('/profile', function () {
     return view('account-pages.profile');

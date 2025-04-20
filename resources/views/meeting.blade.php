@@ -1,4 +1,4 @@
-
+{{-- 
 <!DOCTYPE html>
     <html>
       <head>
@@ -18,4 +18,34 @@
       </head>
       <body><div id="jaas-container" /></body>
     </html>
-  
+   --}}
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <title>Meeting</title>
+       <script src="https://8x8.vc/vpaas-magic-cookie-19cb8034062045b4bb2bc3ad56c68950/external_api.js" async></script>
+       <style>
+           html, body, #jaas-container {
+               height: 100%;
+               margin: 0;
+               padding: 0;
+           }
+       </style>
+   </head>
+   <body>
+       <div id="jaas-container"></div>
+       <script>
+           window.onload = () => {
+               const api = new JitsiMeetExternalAPI("8x8.vc", {
+                   roomName: "vpaas-magic-cookie-19cb8034062045b4bb2bc3ad56c68950/SampleAppSustainableBarrelsRepairSurely",
+                   parentNode: document.querySelector('#jaas-container'),
+                   userInfo: {
+                       displayName: "Peserta Rapat"
+                   }
+               });
+           }
+       </script>
+   </body>
+   </html>
+   
