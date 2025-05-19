@@ -13,17 +13,7 @@
                                     
                                 </div>
                                 <div class="text-center">
-                                    @if (session('status'))
-                                        <div class="mb-4 font-medium text-sm text-green-600">
-                                            {{ session('status') }}
-                                        </div>
-                                    @endif
-                                    @error('message')
-                                        <div class="alert alert-danger text-sm" role="alert">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                                </div>
+                                                                                                        </div>
                                 <div class="card-body">
                                     <form role="form" class="text-start" method="POST" action="sign-in">
                                         @csrf
@@ -81,6 +71,25 @@
             </div>
         </section>
     </main>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+        var win = navigator.platform.indexOf('Win') > -1;
+        if (win && document.querySelector('#sidenav-scrollbar')) {
+            var options = {
+                damping: '0.5'
+            }
+            Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+        }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    
+    <script src="../assets/js/corporate-ui-dashboard.min.js?v=1.0.0"></script>
+</body>
 
 </x-guest-layout>
 

@@ -16,8 +16,8 @@ use App\Http\Controllers\MeetingController;
 
 Route::get('/meetings', [MeetingController::class, 'index']);
 Route::get('/', function () {
-    return redirect('/dashboard');
-})->middleware('auth');
+    return redirect('/sign-up');
+})->middleware('guest');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
