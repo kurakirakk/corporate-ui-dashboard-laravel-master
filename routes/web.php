@@ -10,16 +10,8 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Str;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
+
 use App\Http\Controllers\MeetingController;
 
 Route::get('/meetings', [MeetingController::class, 'index']);
@@ -56,46 +48,60 @@ Route::get('/profile', function () {
     return view('account-pages.profile');
 })->name('profile')->middleware('auth');
 
-Route::get('/signin', function () {
-    return view('account-pages.signin');
-})->name('signin');
+// Route::get('/signin', function () {
+//     return view('account-pages.signin');
+// })->name('signin');
 
-Route::get('/signup', function () {
-    return view('account-pages.signup');
-})->name('signup')->middleware('guest');
+// Route::get('/signup', function () {
+//     return view('account-pages.signup');
+// })->name('signup')->middleware('guest');
 
-Route::get('/sign-up', [RegisterController::class, 'create'])
-    ->middleware('guest')
-    ->name('sign-up');
+// Route::get('/sign-up', [RegisterController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('sign-up');
 
-Route::post('/sign-up', [RegisterController::class, 'store'])
-    ->middleware('guest');
+// Route::post('/sign-up', [RegisterController::class, 'store'])
+//     ->middleware('guest');
 
-Route::get('/sign-in', [LoginController::class, 'create'])
-    ->middleware('guest')
-    ->name('sign-in');
+// Route::get('/sign-in', [LoginController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('sign-in');
 
-Route::post('/sign-in', [LoginController::class, 'store'])
-    ->middleware('guest');
+// Route::post('/sign-in', [LoginController::class, 'store'])
+//     ->middleware('guest');
 
-Route::post('/logout', [LoginController::class, 'destroy'])
-    ->middleware('auth')
-    ->name('logout');
+// Route::post('/logout', [LoginController::class, 'destroy'])
+//     ->middleware('auth')
+//     ->name('logout');
 
-Route::get('/forgot-password', [ForgotPasswordController::class, 'create'])
-    ->middleware('guest')
-    ->name('password.request');
+// Route::get('/forgot-password', [ForgotPasswordController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('password.request');
 
-Route::post('/forgot-password', [ForgotPasswordController::class, 'store'])
-    ->middleware('guest')
-    ->name('password.email');
+// Route::post('/forgot-password', [ForgotPasswordController::class, 'store'])
+//     ->middleware('guest')
+//     ->name('password.email');
 
-Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create'])
-    ->middleware('guest')
-    ->name('password.reset');
+// Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('password.reset');
 
-Route::post('/reset-password', [ResetPasswordController::class, 'store'])
-    ->middleware('guest');
+// Route::post('/reset-password', [ResetPasswordController::class, 'store'])
+//     ->middleware('guest');
+
+//Route LOgin
+Route::get('/sign-in', [LoginController::class, 'create'])->middleware('guest')->name('sign-in');
+Route::post('/sign-in', [LoginController::class, 'store'])->middleware('guest');
+Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')->name('logout');
+use App\Http\Controllers\AuthController;
+
+Route::get('/signin', [AuthController::class, 'showLoginForm'])->name('signin');
+
+// Contoh route dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware('auth')->name('dashboard');
+
 
 Route::get('/laravel-examples/user-profile', [ProfileController::class, 'index'])->name('users.profile')->middleware('auth');
 Route::put('/laravel-examples/user-profile/update', [ProfileController::class, 'update'])->name('users.update')->middleware('auth');

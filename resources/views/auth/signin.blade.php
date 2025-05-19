@@ -1,10 +1,5 @@
 <x-guest-layout>
-    {{-- <div class="container position-sticky z-index-sticky top-0">
-        <div class="row">
-            <div class="col-12">
-                <x-guest.sidenav-guest />
-            </div>
-        </div> --}}
+
     </div>
     <main class="main-content  mt-0">
         <section>
@@ -15,9 +10,6 @@
                             <div class="card card-plain mt-8">
                                 <div class="card-header pb-0 text-left bg-transparent text-center">
                                     <h3 class="font-weight-black text-dark display-6">LOGIN</h3>
-                                    {{-- <p class="mb-0">Selamat Datang di E-RAPAT </p>
-                                    <p class="mb-0">DISKOMINFO KABUPATEN BADUNG!</p> --}}
-                                    {{-- <p class="mb-0">Silahkan masukkan username dan password.<br></p> --}}
                                     
                                 </div>
                                 <div class="text-center">
@@ -36,23 +28,20 @@
                                     <form role="form" class="text-start" method="POST" action="sign-in">
                                         @csrf
                                       
+                                        <label>NIK</label>
+<div class="mb-3">
+    <input type="text" name="nik" class="form-control"
+        placeholder="Enter your NIK" aria-label="NIK"
+        aria-describedby="nik-addon" required>
+</div>
 
-                                        <label>Username</label>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control"
-                                                placeholder="Enter your username" aria-label="Username"
-                                                aria-describedby="username-addon">
-                                        </div>
-
-
-
-                                        <label>Password</label>
-                                        <div class="mb-3">
-                                            <input type="password" id="password" name="password"
-                                                {{-- value="{{ old('password') ? old('password') : 'secret' }}" --}}
-                                                class="form-control" placeholder="Enter password" aria-label="Password"
-                                                aria-describedby="password-addon">
-                                        </div>
+<label>Password</label>
+<div class="mb-3">
+    <input type="password" name="password"
+        class="form-control" placeholder="Enter password" aria-label="Password"
+        aria-describedby="password-addon" required>
+</div>
+                                        
                                         <div class="d-flex align-items-center">
                                             <div class="form-check form-check-info text-left mb-0">
                                                 <input class="form-check-input" type="checkbox" value=""
@@ -61,9 +50,7 @@
                                                     Remember me
                                                 </label>
                                             </div>
-                                            <a href="{{ route('password.request') }}"
-                                                class="text-xs font-weight-bold ms-auto">Forgot
-                                                password?</a>
+                                            
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Sign in</button>
@@ -96,3 +83,4 @@
     </main>
 
 </x-guest-layout>
+

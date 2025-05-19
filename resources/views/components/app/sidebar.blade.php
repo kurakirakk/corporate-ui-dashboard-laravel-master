@@ -133,6 +133,22 @@
                     <span class="nav-link-text ms-1">Laporan</span>
                 </a>
             </li>
+            <li class="nav-item"> 
+                <a class="nav-link  {{ is_current_route('home') ? 'active' : '' }}" href="{{ route('home') }}">
+                    <div
+                        class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
+                        {{-- Ikon Calendar --}}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="#FFFFFF" viewBox="0 0 24 24">
+                            <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.103 0-2 .897-2 2v14c0 
+                                     1.103.897 2 2 2h14c1.103 0 2-.897 
+                                     2-2V6c0-1.103-.897-2-2-2zm0 
+                                     16H5V10h14v10zm0-12H5V6h14v2z"/>
+                        </svg>
+                    </div>
+                    <span class="nav-link-text ms-1">Jadwal</span>
+                </a>
+            </li>
+            
             <li class="nav-item mt-2">
                 <div class="d-flex align-items-center nav-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="ms-2"
@@ -179,11 +195,8 @@
                     <span class="nav-link-text ms-1">Sign In</span>
                 </a>
             </li>
-            <li class="nav-item border-start my-0 pt-2">
-                <a class="nav-link position-relative ms-0 ps-2 py-2 {{ is_current_route('signup') ? 'active' : '' }}"
-                    href="{{ route('signup') }}">
-                    <span class="nav-link-text ms-1">Sign Up</span>
-                </a>
+            
+                
             </li>
         </ul>
     </div>

@@ -1,6 +1,18 @@
-<!DOCTYPE html>
+<x-app-layout>
+  <x-app.navbar />
+  <x-app.sidebar />
+
+  <!DOCTYPE html>
 <html lang='en'>
   <head>
+    {{-- <style>
+      #calendar {
+          width: 100%;
+          max-width: 1000px;
+          margin: auto;
+          padding: 20px;
+      }
+  </style> --}}
     <meta charset='utf-8' />
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/daygrid@6.1.17/index.global.min.js'></script>
@@ -30,3 +42,4 @@
   </body>
 </html>
 
+</x-app-layout>
