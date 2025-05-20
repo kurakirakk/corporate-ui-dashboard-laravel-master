@@ -21,7 +21,7 @@
             href="https://demos.creative-tim.com/corporate-ui-dashboard/pages/dashboard.html" target="_blank">
             
             <!-- Logo Diskominfo (Kominfo nasional) -->
-            <img src="../assets/img/logo-badung.png" alt="Logo Diskominfo Badung" style="height: 40px;">
+            <img src="{{asset('assets/img/logo-badung.png')}}" alt="Logo Diskominfo Badung" style="height: 40px;">
             
             <!-- Tulisan E-RAPAT -->
             <span class="font-weight-bold text-lg text-white">E-RAPAT</span>
