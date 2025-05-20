@@ -58,12 +58,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  {{ is_current_route('tables') ? 'active' : '' }}" href="{{ route('tables') }}">
+                <a class="nav-link  {{ is_current_route('pegawai.index') ? 'active' : '' }}" href="{{ route('pegawai.index') }}">
                     <div
                         class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
                         <svg width="30px" height="30px" viewBox="0 0 48 48" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <title>table</title>
+                            <title>Data Pegawai</title>
                             <g id="table" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                 <g id="view-grid" transform="translate(12.000000, 12.000000)" fill="#FFFFFF"
                                     fill-rule="nonzero">

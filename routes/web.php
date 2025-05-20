@@ -9,10 +9,14 @@ use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Str;
-
-
-
 use App\Http\Controllers\MeetingController;
+use App\Http\Controllers\PegawaiController;
+
+
+
+
+Route::resource('pegawai', PegawaiController::class);
+Route::get('/pegawai/{pegawai}/edit', [PegawaiController::class, 'edit'])->name('pegawai.edit');
 
 Route::get('/meetings', [MeetingController::class, 'index']);
 Route::get('/', function () {
@@ -47,6 +51,7 @@ Route::get('/rapat', function () {
 Route::get('/profile', function () {
     return view('account-pages.profile');
 })->name('profile')->middleware('auth');
+
 
 // Route::get('/signin', function () {
 //     return view('account-pages.signin');
