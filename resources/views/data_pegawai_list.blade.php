@@ -1,5 +1,5 @@
 <x-app-layout>
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg">
+    <main class="main-content position-relative max-height-vh-100 h-100 ">
         <x-app.navbar />
         <div class="container-fluid py-4 px-3">
             <div class="row">
@@ -113,5 +113,7 @@
                 </div>
             </div>
         </div>
+        <x-app.footer />
     </main>
+    
 </x-app-layout>

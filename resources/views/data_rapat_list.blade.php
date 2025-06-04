@@ -112,7 +112,7 @@
                                                                     @elseif ($rapat->status == 'selesai')
                                                                         <span class="text-primary"><i class="fas fa-check-circle"></i> Sudah Selesai</span>
                                                                     @else
-                                                                        <span class="text-warning"><i class="fas fa-spinner fa-spin"></i> Belum Berlangsung</span>
+                                                                        <span class="text-warning"><i class="fas fa-spinner fa-spin"></i> Sedang Berlangsung</span>
                                                                     @endif
                                                                 </p>
                                                             </div>
@@ -191,6 +191,7 @@
                 </div>
             </div>
         </div>
+        <x-app.footer />
     </main>
 
     <script>
@@ -227,4 +228,6 @@
     @endforeach
     });
     </script>
+    
+
 </x-app-layout>
